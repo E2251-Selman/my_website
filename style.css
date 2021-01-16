@@ -1,126 +1,141 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-} 
-body{
-    width: 100%;
-    height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-#navbar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 4rem;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    
-    
-}
-#welcome{
-    height: 100vh;
-    background-image: url("https://picsum.photos/800/600?random=1");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-attachment: fixed;
-    flex-direction: column;
-    gap: 5rem;
-}   
-#welcome h1{
-    background-color:rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 1.25rem;
+#navbar {
     font-size: 1.5rem;
-    width:20rem;
-    margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
 }
-img{
-    width: 20rem;
-    border-radius: 50%;
-    margin: 0 auto;
-    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+#welcome {
+  background-image: url("./image/digitalswitzerland-Digital-Day-Visual_BlogHeader.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-attachment: fixed;
+  flex-direction: column;
+  gap: 5rem;
 }
-#page2{
-    background-color: #f4f4f4;
-    color: #282e34;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 25rem;
-    padding: 3rem 5rem;
-    background-image: url("https://picsum.photos/800/600?random=2");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-attachment: fixed;
-
+#welcome h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  width: 20rem;
+  margin: 0 auto;
 }
-h2{
-    background-color:rgba(0, 0, 0, 0.5);
-    color:white;
-
+img {
+  width: 20rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+}
+#page2 {
+  background-color: #f4f4f4;
+  color: #282e34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 25rem;
+  padding: 3rem 5rem;
+  background-image: url("./image/Wealthtech-Switzerland-Report-1440x564_c.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 h3 {
-    margin: 1rem;
+  margin: 1rem;
 }
 ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
-li{
-    margin: 1rem;
-    cursor: pointer;
+li {
+  margin: 1rem;
+  cursor: pointer;
 }
-a{
+a {
+    
+    color: rgb(178, 49, 73);
+  text-align: center;
     text-decoration: none;
+    padding:1rem;
+
 }
-li:hover{
-    background-color: chartreuse;
-    color: white;
+a:hover {
+  transition: background-color 0.4s;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
-#navbar div{
+#navbar div {
     display: flex;
     text-align: center;
-    justify-content: center;
-    padding: 0 1rem;
-
+  justify-content: center;
+  padding: 0 1rem;
 }
 h1 {
-
-text-align: center;
-
+    text-align: center;
 }
-span{
-  
-    color: brown;
+span {
+    color: rgb(178, 49, 73);
 }
 
-@media only screen and (max-width: 600px) {
-    #navbar div{
-        width: 100%;
-        padding-top: 0.5rem;
-        margin: 0;
-  
+@media only screen and (max-width: 743px) {
+    #navbar div {
+      font-size: 1rem;
+      width: 100%;
+    padding-top: 0.5rem;
+    margin: 0;
   }
-  #navbar h3{
+  #navbar h3 {
       margin: 0;
-  }
+    margin-bottom: 0.5rem;
+}
   #navbar ul {
-    margin-top: -1.4rem;
-  
+      
+      margin-top: -1.4rem;
   }
+  img{
+      margin-top: 10rem;
+    }
+  a{
+      color: black;  
+      padding: 0.3rem;
+      
+    }
+a:hover {
+
+        background-color: white;
+  transition: background-color 5s;
+        
+        border-bottom: 2px solid yellow;
+        color: black;
+
+    }
   
-  }
-  
+}
