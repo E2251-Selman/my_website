@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 body {
   width: 100%;
@@ -21,6 +22,7 @@ body {
   background-color: white;
   position: fixed;
   top: 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
 }
 #welcome {
   background-image: url("./image/digitalswitzerland-Digital-Day-Visual_BlogHeader.jpg");
@@ -104,7 +106,17 @@ h1 {
 span {
     color: rgb(178, 49, 73);
 }
+#footer{
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.5rem;
+}
+#footer p {
+    text-shadow: 1px 1px 5px ;
 
+}
 @media only screen and (max-width: 743px) {
     #navbar div {
       font-size: 1rem;
@@ -120,6 +132,11 @@ span {
       
       margin-top: -1.4rem;
   }
+  #welcome{
+    margin-top: -3rem;
+  gap: 1rem;
+
+  }
   img{
       margin-top: 10rem;
     }
@@ -133,7 +150,7 @@ a:hover {
         background-color: white;
   transition: background-color 5s;
         
-        border-bottom: 2px solid yellow;
+        border-bottom: 2px solid white;
         color: black;
 
     }
