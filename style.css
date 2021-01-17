@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 body {
   width: 100%;
@@ -11,7 +11,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 #navbar {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -22,7 +22,8 @@ body {
   background-color: white;
   position: fixed;
   top: 0;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 #welcome {
   background-image: url("./image/digitalswitzerland-Digital-Day-Visual_BlogHeader.jpg");
@@ -35,14 +36,17 @@ body {
   background-attachment: fixed;
   flex-direction: column;
   gap: 5rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 #welcome h1 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 1.25rem;
   font-size: 1.5rem;
   width: 20rem;
   margin: 0 auto;
+  text-shadow: #000 0 0 5px, #000 0 0 15px;
 }
 img {
   width: 20rem;
@@ -50,6 +54,23 @@ img {
   margin: 0 auto;
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
 }
+#desc {
+  padding: 2rem;
+}
+#desc h2 {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 100)
+  );
+  color: white;
+  text-shadow: #000 0 0 5px, #000 0 0 15px;
+}
+#desc p {
+  padding: 1rem;
+  letter-spacing: 0.04rem;
+}
+
 #page2 {
   background-color: #f4f4f4;
   color: #282e34;
@@ -65,9 +86,20 @@ img {
   height: 100vh;
   background-attachment: fixed;
 }
-h2 {
-  background-color: rgba(0, 0, 0, 0.5);
+#page2 h2 {
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+#sum {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-shadow: #000 0 0 5px, #000 0 0 15px;
 }
 h3 {
   margin: 1rem;
@@ -81,12 +113,12 @@ li {
   cursor: pointer;
 }
 a {
-    
-    color: rgb(178, 49, 73);
+  color: white;
   text-align: center;
-    text-decoration: none;
-    padding:1rem;
-
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  text-shadow: #000 0 0 5px, #000 0 0 15px;
 }
 a:hover {
   transition: background-color 0.4s;
@@ -95,64 +127,58 @@ a:hover {
 }
 
 #navbar div {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
   justify-content: center;
   padding: 0 1rem;
 }
 h1 {
-    text-align: center;
+  text-align: center;
 }
 span {
-    color: rgb(178, 49, 73);
+  color: rgb(178, 49, 73);
 }
-#footer{
-    height: 3rem;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    padding-top: 0.5rem;
+#footer {
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.5rem;
 }
 #footer p {
-    text-shadow: 1px 1px 5px ;
-
+  text-shadow: #000 0 0 5px, #000 0 0 15px;
 }
 @media only screen and (max-width: 743px) {
-    #navbar div {
-      font-size: 1rem;
-      width: 100%;
+  #navbar div {
+    font-size: 1rem;
+    width: 100%;
     padding-top: 0.5rem;
     margin: 0;
   }
   #navbar h3 {
-      margin: 0;
+    margin: 0;
     margin-bottom: 0.5rem;
-}
+  }
   #navbar ul {
-      
-      margin-top: -1.4rem;
+    margin-top: -1.4rem;
   }
-  #welcome{
+  #welcome {
     margin-top: -3rem;
-  gap: 1rem;
-
+    gap: 1rem;
   }
-  img{
-      margin-top: 10rem;
-    }
-  a{
-      color: black;  
-      padding: 0.3rem;
-      
-    }
-a:hover {
-
-        background-color: white;
-  transition: background-color 5s;
-        
-        border-bottom: 2px solid white;
-        color: black;
-
-    }
-  
+  img {
+    margin-top: 10rem;
+  }
+  a {
+    color:white;
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
+  a:hover {
+    background-color: white;
+    transition: background-color 5s;
+   
+    border-bottom: 2px solid white;
+    color: rgb(178, 49, 73);
+  }
 }
