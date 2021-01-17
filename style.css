@@ -10,6 +10,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+.skills{
+  width: 7rem;
+  height: 15rem;
+  background-color: aquamarine;
+
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+
+}
 #navbar {
   font-size: 1.5rem;
   display: flex;
@@ -24,6 +33,7 @@ body {
   top: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 #welcome {
   background-image: url("./image/digitalswitzerland-Digital-Day-Visual_BlogHeader.jpg");
@@ -48,7 +58,7 @@ body {
   margin: 0 auto;
   text-shadow: #000 0 0 5px, #000 0 0 15px;
 }
-img {
+#pic {
   width: 20rem;
   border-radius: 50%;
   margin: 0 auto;
@@ -78,20 +88,22 @@ img {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
   min-height: 25rem;
   padding: 3rem 5rem;
   background-image: url("./image/Wealthtech-Switzerland-Report-1440x564_c.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
+  position: relative;
+  
   background-attachment: fixed;
   flex-wrap: wrap;
   gap: 3rem;
   text-align: center;
 }
-page2 ul{
+/* page2 ul{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -101,18 +113,64 @@ page2 ul{
 #page2 li{
   display:flex;
   flex-direction: column;
-}
+} */
 #page2 h2 {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 1.25rem;
   font-size: 1.5rem;
   width: 20rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   text-align: center;
- 
+  display: block;
+  text-shadow: #000 0 0 5px, #000 0 0 15px;
+  border-radius: 5px;
+  
   
 }
+#page2 li{
+  display: inline;
+  font-weight: bold;
+  text-shadow: rgb(0, 4, 245) 0 5px 5px, rgb(0, 0, 0) 0 5px 5px;
+  font-size: 1.3rem;
+}
+#page2 h1{
+  text-shadow: #000 0 0 5px, #000 0 0 15px;
+  position: absolute;
+  color:white;
+  top: 0;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-color: white;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+img{
+  width: 250px;
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+}
+#certificate{
+  margin: 5rem auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 5rem;
+}
+.card a{
+  
+}
+#certificate span{
+  writing-mode: vertical-lr;
+  position: absolute;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+ 
+  font-size: 0.75rem;
+}
+
 #sum {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -129,7 +187,7 @@ li {
   margin: 1rem;
   
 }
-a {
+#navbar a {
   color: white;
   text-align: center;
   text-decoration: none;
@@ -138,7 +196,7 @@ a {
   text-shadow: #000 0 0 5px, #000 0 0 15px;
   cursor: pointer;
 }
-a:hover {
+#navbar a:hover {
   transition: background-color 0.4s;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
@@ -157,11 +215,14 @@ span {
   color: rgb(178, 49, 73);
 }
 #footer {
+  margin-top: 2rem;
   height: 3rem;
   width: 100%;
   text-align: center;
   margin: auto;
   padding-top: 0.5rem;
+  border-top: 1px solid gray;
+
 }
 #footer p {
   text-shadow: #000 0 0 5px, #000 0 0 15px;
@@ -184,15 +245,21 @@ span {
     margin-top: -3rem;
     gap: 1rem;
   }
-  img {
+  #pic {
     margin-top: 10rem;
   }
-  a {
+  img{
+    width: 100%;
+  }
+  .card span{
+    display: none;
+  }
+  #navbar a {
     color:white;
     padding: 0.3rem;
     font-size: 1rem;
   }
-  a:hover {
+  #navbar  a:hover {
     background-color: white;
     transition: background-color 5s;
    
