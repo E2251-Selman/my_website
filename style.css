@@ -91,11 +91,16 @@ img {
   gap: 3rem;
   text-align: center;
 }
-#page2 ul{
+page2 ul{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: turquoise;
-  width: 25rem;
+  width: 10rem;
+}
+#page2 li{
+  display:flex;
+  flex-direction: column;
 }
 #page2 h2 {
   background-color: rgba(0, 0, 0, 0.7);
@@ -105,6 +110,7 @@ img {
   width: 20rem;
   margin: 0 auto;
   text-align: center;
+ 
   
 }
 #sum {
