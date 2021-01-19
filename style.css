@@ -157,7 +157,7 @@ img{
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 .card a{
   
