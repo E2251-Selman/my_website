@@ -262,8 +262,6 @@ span {
   #navbar  a:hover {
     background-color: white;
     transition: background-color 5s;
-   
-    border-bottom: 2px solid white;
     color: rgb(178, 49, 73);
   }
   #desc ul{
